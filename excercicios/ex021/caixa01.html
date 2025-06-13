@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 40px;
+            width: 375px;
+            border-style: solid;
+            border-color: green;
+            border-width: 5px;
+            padding: 10px;
+        }
+        a{
+            border-width: 3px;
+            border-style: solid;
+            border-color: rgb(131, 41, 204);
+            padding: 3px;
+            background-color: rgb(174, 106, 219);
+            text-decoration: none;
+        }
+        h1:hover{
+            background-color:  rgb(167, 226, 187);
+            text-decoration: underline;
+        }
+        a:hover{
+            background-color: rgb(161, 77, 218);
+            text-decoration: underline;
+        }
+        p > a {
+            display: none;
+        }
+        p:hover > a{
+            display: block;
+            width: 270px;
+            height: 22px;
+            padding: 10px;
+        }
+        a#voltar{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box level</h1>
+    <p>Parágrafos tambem são exemplos de box level, mas os <a href="#">links são exemplos de caixas inline level</a></p>
+    <p><a href="caixa02.html" id="voltar">Segunda Pagina</a></p>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        header{
+            background-color: white;
+            text-align: center;
+        }
+        header > nav{
+            background-color: rgba(128, 128, 128, 0.692);
+            padding: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+        nav > a{
+            color: white;
+            font-weight: bolder;
+            text-decoration: none;
+            margin: 20px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+        main{
+            background-color: white;
+            margin: 10px 0px 10px 0px;
+            padding: 1px 10px 1px 10px;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.418);
+        }
+        section#assuntos{
+            background-color: rgba(128, 128, 128, 0.233);
+            padding: 0.1px 0.1px 0.1px 0.1px;
+            margin: 10px 0px 5px 0px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        section#assuntos > p{
+            padding: 10px;
+            margin: 0%;
+            font-weight: bolder;
+        }
+        section.noticias{
+            background-color: rgba(128, 128, 128, 0.39);
+            padding: 2px;
+            margin: 2px 0px 10px 0px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        section.noticias > article > aside > p{
+            background-color: white;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: right;
+            font-weight: bolder;
+            padding: 2px 10px 2px;
+        }
+        section.noticias > article > h2{
+            padding-left: 10px;
+        }
+        section.noticias > article > p{
+            padding: 10px;
+            text-align: justify; 
+            text-indent: 30px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0%;
+        }
+        footer > p{
+            margin: 0%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes, Poltica</p>
+        </section>
+        <section class="noticias">
+            <article>
+                <h2>Noticias sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in blanditiis aperiam, voluptates tempora sequi mollitia libero sit aliquid consequuntur, sint sunt ipsum reiciendis nostrum ab dolorem aliquam facere quas?</p>
+                <aside>
+                    <p>Escrito por José</p>
+                    <p><a href="caixa03.html">Terceira pagina</a></p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por rafis</p>
+    </footer>
+</body>
+</html>
